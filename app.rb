@@ -1,5 +1,5 @@
 require_relative 'config/environment'
-require_relative 'models/puppmaker.rb'
+require_relative 'models/puppy_maker.rb'
 
 class App < Sinatra::Base
   
@@ -7,14 +7,14 @@ class App < Sinatra::Base
     erb :index
   end
 
-  post '/puppy' do
+  get '/create_puppy' do
+    erb :create_puppy
+  end
     
+end
   
-   
-  end
-  
-  post '/display_puppy'
-  end
+  #post '/display_puppy'
+  #end
 
-end
-end
+#end
+#end
